@@ -1,0 +1,12 @@
+
+
+x = torch.Tensor{
+	{3,-1,1},
+	{1,2,-2},
+	{3,1,0}
+}
+
+-- z = (x>0)*x*x
+z = (x:gt(0)):double():cmul(x):cmul(x)
+
+
